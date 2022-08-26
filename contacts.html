@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- хедер навігація початок -->
@@ -22,16 +22,21 @@
         <a class="header-logo" href="./index.html"
           ><span class="logo-color">Web</span>Studio</a
         >
+
         <ul class="header-nav-pages">
-          <li><a class="header-nav-pages" href="./index.html">Студія</a></li>
-          <li
-            ><a class="header-nav-pages" href="./portfolio.html"
-              >Портфоліо</a
+          <li class="header-nav-pages-item"
+            ><a class="header-nav-pages-link" href="./index.html"
+              ><div class="header-nav-pages-link-style">Студія</div></a
             ></li
           >
-          <li
-            ><a class="header-nav-pages current" href="./contacts.html"
-              >Контакти</a
+          <li class="header-nav-pages-item"
+            ><a class="header-nav-pages-link" href="./portfolio.html"
+              ><div class="header-nav-pages-link-style">Портфоліо</div></a
+            ></li
+          >
+          <li class="header-nav-pages-item"
+            ><a class="header-nav-pages-link current" href="./contacts.html"
+              ><div class="header-nav-pages-link-style">Контакти</div></a
             ></li
           >
         </ul>
@@ -52,12 +57,12 @@
     <main> <h1>test</h1> </main>
     <!-- футер початок -->
     <footer class="footer">
-      <div class="container">
+      <div class="footer-inner container">
         <a class="footer-logo" href="./index.html"
           ><span class="logo-color">Web</span>Studio</a
         >
         <ul class="footer-contact">
-          <li>
+          <li class="footer-contact-content">
             <address>
               <a
                 class="footer-contact-adress"
@@ -68,12 +73,12 @@
               >
             </address></li
           >
-          <li
+          <li class="footer-contact-content"
             ><a class="footer-contact-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             ></li
           >
-          <li
+          <li class="footer-contact-content"
             ><a class="footer-contact-link" href="tel:+380961111111"
               >+38 096 111 11 11</a
             ></li

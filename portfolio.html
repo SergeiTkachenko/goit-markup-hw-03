@@ -10,10 +10,10 @@
       rel="stylesheet"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-  />
-    <link rel="stylesheet" href="./CSS/styles.css" />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header container">
@@ -21,15 +21,22 @@
         <a class="header-logo" href="./index.html"
           ><span class="logo-color">Web</span>Studio</a
         >
+
         <ul class="header-nav-pages">
-          <li><a class="header-nav-pages" href="./index.html">Студія</a></li>
-          <li
-            ><a class="header-nav-pages current" href="./portfolio.html"
-              >Портфоліо</a
+          <li class="header-nav-pages-item"
+            ><a class="header-nav-pages-link" href="./index.html"
+              ><div class="header-nav-pages-link-style">Студія</div></a
             ></li
           >
-          <li
-            ><a class="header-nav-pages" href="./contacts.html">Контакти</a></li
+          <li class="header-nav-pages-item"
+            ><a class="header-nav-pages-link current" href="./portfolio.html"
+              ><div class="header-nav-pages-link-style">Портфоліо</div></a
+            ></li
+          >
+          <li class="header-nav-pages-item"
+            ><a class="header-nav-pages-link" href="./contacts.html"
+              ><div class="header-nav-pages-link-style">Контакти</div></a
+            ></li
           >
         </ul>
       </nav>
@@ -49,105 +56,136 @@
 
     <!-- меін початок -->
     <main class="container">
-      <section class="portfolio">
+      <section class="portfolio section">
         <h1 class="visually-hidden">Our portfolio</h1>
         <ul class="portfolio-filter">
-          <li><button class="portfolio-filter-btn">Усі</button> </li>
-          <li><button class="portfolio-filter-btn">Веб-сайти</button></li>
-          <li><button class="portfolio-filter-btn">Додатки</button></li>
-          <li><button class="portfolio-filter-btn">Дизайн</button></li>
-          <li><button class="portfolio-filter-btn">Маркетинг</button></li>
+          <li class="portfolio-filter-btn-wraper"
+            ><button class="portfolio-filter-btn">Усі</button>
+          </li>
+          <li class="portfolio-filter-btn-wrapper"
+            ><button class="portfolio-filter-btn">Веб-сайти</button></li
+          >
+          <li class="portfolio-filter-btn-wrapper"
+            ><button class="portfolio-filter-btn">Додатки</button></li
+          >
+          <li class="portfolio-filter-btn-wrapper"
+            ><button class="portfolio-filter-btn">Дизайн</button></li
+          >
+          <li class="portfolio-filter-btn-wrapper"
+            ><button class="portfolio-filter-btn">Маркетинг</button></li
+          >
         </ul>
         <ul class="portfolio-list">
           <li class="portfolio-card"
             ><img
+              class="portfolio-img"
               src="./img/portfolio/img1.jpg"
               alt="веб-сайт"
               width="370"
               height="294"
-            />
-            <h2 class="portfolio-title">Технокряк</h2>
-            <p class="portfolio-text">Веб-сайт</p>
+            /><div class="portfolio-wrapper">
+              <h2 class="portfolio-title">Технокряк</h2>
+              <p class="portfolio-text">Веб-сайт</p></div
+            >
           </li>
           <li class="portfolio-card"
             ><img
+              class="portfolio-img"
               src="./img/portfolio/img2.jpg"
               alt="постер"
               width="370"
               height="294"
-            />
-            <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
-            <p class="portfolio-text">Дизайн</p></li
+            /><div class="portfolio-wrapper">
+              <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
+              <p class="portfolio-text">Дизайн</p></div
+            ></li
           >
           <li class="portfolio-card"
             ><img
+              class="portfolio-img"
               src="./img/portfolio/img3.jpg"
               alt="логотип ресторану"
               width="370"
               height="294"
-            />
-            <h2 class="portfolio-title">Ресторан Seafood</h2>
-            <p class="portfolio-text">Додаток</p></li
+            /><div class="portfolio-wrapper">
+              <h2 class="portfolio-title">Ресторан Seafood</h2>
+              <p class="portfolio-text">Додаток</p></div
+            ></li
           >
           <li class="portfolio-card"
             ><img
+              class="portfolio-img"
               src="./img/portfolio/img4.jpg"
               alt="навушники"
               width="370"
               height="294"
-            />
-            <h2 class="portfolio-title">Проєкт Prime</h2>
-            <p class="portfolio-text">Маркетинг</p></li
+            /><div class="portfolio-wrapper">
+              <h2 class="portfolio-title">Проєкт Prime</h2>
+              <p class="portfolio-text">Маркетинг</p></div
+            ></li
           >
           <li class="portfolio-card"
             ><img
+              class="portfolio-img"
               src="./img/portfolio/img5.jpg"
               alt="дві коробочки"
               width="370"
               height="294"
-            />
-            <h2 class="portfolio-title">Проєкт Boxes</h2>
-            <p class="portfolio-text">Додаток</p></li
+            /><div class="portfolio-wrapper">
+              <h2 class="portfolio-title">Проєкт Boxes</h2>
+              <p class="portfolio-text">Додаток</p></div
+            ></li
           >
           <li class="portfolio-card"
             ><img
+              class="portfolio-img"
               src="./img/portfolio/img6.jpg"
               alt="монітор"
               width="370"
               height="294"
-            />
-            <h2 class="portfolio-title">Inspiration has no Borders</h2>
-            <p class="portfolio-text">Веб-сайт</p></li
+            /><div class="portfolio-wrapper">
+              <h2 class="portfolio-title">Inspiration has no Borders</h2>
+              <p class="portfolio-text">Веб-сайт</p></div
+            ></li
           >
           <li class="portfolio-card"
             ><img
+              class="portfolio-img"
               src="./img/portfolio/img7.jpg"
               alt="брошура"
               width="370"
               height="294"
             />
-            <h2 class="portfolio-title">Видання Limited Edition</h2>
-            <p class="portfolio-text">Дизайн</p></li
+            <div class="portfolio-wrapper">
+              <h2 class="portfolio-title">Видання Limited Edition</h2>
+              <p class="portfolio-text">Дизайн</p>
+            </div></li
           >
           <li class="portfolio-card"
             ><img
+              class="portfolio-img"
               src="./img/portfolio/img8.jpg"
               alt="лейба"
               width="370"
               height="294"
             />
-            <h2 class="portfolio-title">Проєкт LAB</h2>
-            <p class="portfolio-text">Маркетинг</p></li
+            <div class="portfolio-wrapper">
+              <h2 class="portfolio-title">Проєкт LAB</h2>
+              <p class="portfolio-text">Маркетинг</p>
+            </div></li
           >
           <li class="portfolio-card"
             ><img
+              class="portfolio-img"
               src="./img/portfolio/img9.jpg"
               alt="ноутбук"
               width="370"
               height="294"
             />
-            <h2 class="portfolio-title">Growing Business</h2>
-            <p class="portfolio-text">Додаток</p></li
+            <div class="portfolio-wrapper">
+              <h2 class="portfolio-title">Growing Business</h2>
+              <p class="portfolio-text">Додаток</p>
+            </div></li
           >
         </ul>
       </section>
@@ -156,12 +194,12 @@
 
     <!-- футер початок -->
     <footer class="footer">
-      <div class="container">
+      <div class="footer-inner container">
         <a class="footer-logo" href="./index.html"
           ><span class="logo-color">Web</span>Studio</a
         >
         <ul class="footer-contact">
-          <li>
+          <li class="footer-contact-content">
             <address>
               <a
                 class="footer-contact-adress"
@@ -172,12 +210,12 @@
               >
             </address></li
           >
-          <li
+          <li class="footer-contact-content"
             ><a class="footer-contact-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             ></li
           >
-          <li
+          <li class="footer-contact-content"
             ><a class="footer-contact-link" href="tel:+380961111111"
               >+38 096 111 11 11</a
             ></li
