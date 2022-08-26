@@ -1,0 +1,375 @@
+:root {
+  /* fonts */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  /* text color */
+  --main-txt-cl: #757575;
+  --light-txt-cl: #ffffff;
+  --accent-txt-cl: #2196f3;
+  --title-txt-cl: #212121;
+  --footer-grey-txt-cl: #ffffff99;
+  --dark-txt-cl: #000;
+  /* Background colors */
+  --dark-bg-cl: #2f303a;
+  --team-bg-cl: #f5f4fa;
+  --team-caerd-bg-cl: #fff;
+  /* bnt */
+  --portfolio-btn-cl: #f5f4fa;
+  --portfolio-btn-hover-cl: #2196f3;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+
+  color: var(--main-txt-cl);
+  background-color: var(--team-caerd-bg-cl);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* початок хедер */
+
+.header-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  text-decoration: none;
+
+  color: var(--dark-txt-cl);
+}
+
+.logo-color {
+  color: var(--accent-txt-cl);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: left;
+}
+
+.header-nav-pages {
+  list-style-type: none;
+  display: flex;
+  justify-content: left;
+}
+
+.header-nav-pages {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: #212121;
+}
+
+.header-nav-pages:hover,
+.header-nav-pages:focus {
+  color: var(--accent-txt-cl);
+}
+
+.header-contact-link {
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: var(--main-txt-cl);
+}
+
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--accent-txt-cl);
+}
+
+.current {
+  color: var(--accent-txt-cl);
+}
+/* кінець хедер */
+
+/* початок футер */
+
+.footer {
+  background-color: var(--dark-bg-cl);
+}
+
+.footer-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  text-decoration: none;
+
+  color: var(--light-txt-cl);
+}
+
+.footer-contact {
+  list-style-type: none;
+
+  padding: 20px 0 60px 0;
+}
+
+.footer-contact-adress {
+  text-decoration: none;
+  font-style: normal;
+
+  color: #ffffff;
+}
+
+.footer-contact-adress:hover,
+.footer-contact-adress:focus {
+  color: var(--accent-txt-cl);
+}
+
+.footer-contact-link {
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  color: var(--footer-grey-txt-cl);
+}
+
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+  color: var(--accent-txt-cl);
+}
+
+/* кінець футер */
+
+/* початок герой */
+
+.hero {
+  background-color: var(--dark-bg-cl);
+  width: 100%;
+  height: 600px;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--light-txt-cl);
+
+  padding-top: 200px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  max-width: 696px;
+}
+
+.hero-btn {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+
+  color: var(--light-txt-cl);
+  background-color: var(--accent-txt-cl);
+
+  width: 216px;
+  height: 50px;
+
+  margin: 0 auto 200px auto;
+  padding: 10px 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: var(--accent-txt-cl);
+}
+
+/* переваги початок */
+
+.benefits {
+}
+
+.benefits-card {
+  width: 270px;
+  height: 98px;
+}
+
+.benefits-list {
+  list-style-type: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.benefits-list-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+
+  color: var(--title-txt-cl);
+}
+
+.benefits-list-content {
+  line-height: calc(24 / 14);
+}
+
+/* переваги кінець */
+
+/* чим ми займаємося початок */
+
+.what-we-do {
+}
+
+.what-we-do-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+
+  color: var(--dark-txt-cl);
+}
+
+.what-we-do-img {
+  list-style-type: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* чим ми займаємося кінць */
+
+/* наша команда початок */
+
+.team {
+  background-color: var(--team-bg-cl);
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+
+  color: var(--title-txt-cl);
+}
+
+.teem-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team-card {
+  background-color: var(--light-txt-cl);
+
+  width: 270px;
+  height: 368px;
+}
+
+.team-card-name {
+  font-weight: 500;
+  line-height: 19px calc(19 / 16);
+
+  text-align: center;
+
+  color: var(--title-txt-cl);
+}
+
+.team-card-profession {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+
+  text-align: center;
+}
+
+/* наша команда кінець */
+
+/* PORTFOLIO START */
+
+.portfolio-filter {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-filter-btn {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
+
+  color: var(--title-txt-cl);
+  background-color: var(--portfolio-btn-cl);
+
+  border-radius: 4px;
+  border: 0;
+}
+
+.portfolio-filter-btn:hover,
+.portfolio-filter-btn:focus {
+  color: var(--light-txt-cl);
+  background-color: var(--portfolio-btn-hover-cl);
+}
+
+.portfolio-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 0;
+}
+
+.portfolio-card {
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+
+  color: var(--title-txt-cl);
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
+
+/* PORTFOLIO END */
