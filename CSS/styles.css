@@ -131,6 +131,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -145,11 +146,9 @@ body {
   color: var(--accent-txt-cl);
 }
 
-.header-nav-pages-link-style {
+.header-contact-link {
   padding-top: 32px;
   padding-bottom: 32px;
-}
-.header-contact-link {
   margin-right: 50px;
 
   font-weight: 500;
