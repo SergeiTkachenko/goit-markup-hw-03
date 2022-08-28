@@ -20,6 +20,15 @@
   --portfolio-card-border: #eee;
 }
 
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+
+  color: var(--main-txt-cl);
+  background-color: var(--team-caerd-bg-cl);
+}
+
 h1,
 h2,
 h3,
@@ -38,13 +47,15 @@ img {
   height: auto;
 }
 
-body {
-  font-family: var(--main-font);
-  font-size: 14px;
-  letter-spacing: 0.03em;
+address {
+  font-style: normal;
+}
 
-  color: var(--main-txt-cl);
-  background-color: var(--team-caerd-bg-cl);
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 
 .visually-hidden {
@@ -80,14 +91,16 @@ body {
 
 /* початок хедер */
 .header {
-  align-items: center;
   border-bottom: 1px solid var(--header-border);
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
   margin-right: 93px;
-  margin-top: 24px;
-  margin-bottom: 25px;
 
   font-family: 'Raleway';
   font-weight: 700;
@@ -102,14 +115,10 @@ body {
   color: var(--accent-txt-cl);
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-}
-
 .header-nav {
   display: flex;
-  justify-content: left;
+  align-items: center;
+  /* justify-content: left; */
 }
 
 .header-nav-pages {
@@ -146,6 +155,10 @@ body {
   color: var(--accent-txt-cl);
 }
 
+.header-contact {
+  margin-left: auto;
+}
+
 .header-contact-link {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -177,10 +190,11 @@ body {
 
 .footer {
   background-color: var(--dark-bg-cl);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-inner {
-  padding-top: 60px;
 }
 
 .footer-logo {
@@ -194,18 +208,18 @@ body {
 }
 
 .footer-contact {
-  padding-top: 20px;
-  padding-bottom: 60px;
+  margin-top: 20px;
 
   list-style-type: none;
+  line-height: calc(24 / 16);
 }
 
 .footer-contact-content {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-contact-content:last-child {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .footer-contact-adress {
@@ -237,11 +251,17 @@ body {
 /* початок герой */
 
 .hero {
-  width: 100%;
-  height: 600px;
+  /* height: 600px; */
   background-color: var(--dark-bg-cl);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 696px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -250,15 +270,6 @@ body {
   text-transform: uppercase;
 
   color: var(--light-txt-cl);
-
-  padding-top: 200px;
-  padding-bottom: 30px;
-  margin: 0 auto;
-  max-width: 696px;
-}
-
-.hero-btn-inner {
-  padding-bottom: 200px;
 }
 
 .hero-btn {
@@ -267,24 +278,19 @@ body {
   font-size: 16px;
   line-height: calc(30 / 16);
 
-  cursor: pointer;
-
-  display: flex;
+  /* display: flex; */
   align-items: center;
   letter-spacing: 0.06em;
 
   color: var(--light-txt-cl);
   background-color: var(--accent-txt-cl);
 
-  width: 216px;
-  height: 50px;
+  min-width: 216px;
 
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 25px;
+  padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-color: var(--accent-txt-cl);
 }
 
 /* переваги початок */
@@ -296,7 +302,6 @@ body {
   margin-right: 30px;
 
   width: 270px;
-  height: 100%;
 }
 
 .benefits-card:last-child {
@@ -365,7 +370,7 @@ body {
 }
 
 .team-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
@@ -391,7 +396,6 @@ body {
   border-radius: 0px 0px 4px 4px;
 
   width: 270px;
-  height: 368px;
 }
 
 .team-card:last-child {
@@ -399,12 +403,16 @@ body {
 }
 
 .team-img {
-  margin-bottom: 30px;
+}
+
+.team-card-wrapper {
+  padding: 30px 60px;
 }
 
 .team-card-name {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
+  font-size: 16px;
   font-weight: 500;
   line-height: calc(19 / 16);
 
@@ -414,8 +422,6 @@ body {
 }
 
 .team-card-profession {
-  padding-bottom: 30px;
-
   font-size: 16px;
   line-height: calc(19 / 16);
 
@@ -444,6 +450,8 @@ body {
 }
 
 .portfolio-filter-btn {
+  padding: 6px 22px;
+
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
@@ -482,16 +490,16 @@ body {
   margin-bottom: 30px;
 
   background: var(--team-caerd-bg-cl);
-  border: 1px solid var(--portfolio-card-border);
 }
 
 .portfolio-img {
-  margin-bottom: 20px;
 }
 
 .portfolio-wrapper {
-  margin-left: 24px;
-  margin-bottom: 20px;
+  padding: 20px 24px;
+
+  border: 1px solid var(--portfolio-card-border);
+  border-top: none;
 }
 
 .portfolio-title {
