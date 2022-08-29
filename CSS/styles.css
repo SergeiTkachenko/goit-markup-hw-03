@@ -207,15 +207,14 @@ button {
   color: var(--light-txt-cl);
 }
 
-.footer-contact {
+.footer-address {
   margin-top: 20px;
-
   list-style-type: none;
-  line-height: calc(24 / 16);
 }
 
 .footer-contact-content {
   margin-bottom: 9px;
+  line-height: calc(24 / 16);
 }
 
 .footer-contact-content:last-child {
@@ -225,7 +224,7 @@ button {
 .footer-contact-adress {
   text-decoration: none;
   font-style: normal;
-
+  line-height: calc(24 / 16);
   color: #ffffff;
 }
 
@@ -406,7 +405,7 @@ button {
 }
 
 .team-card-wrapper {
-  padding: 30px 60px;
+  padding: 30px 0;
 }
 
 .team-card-name {
